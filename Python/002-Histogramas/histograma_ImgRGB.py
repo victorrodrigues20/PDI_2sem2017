@@ -2,14 +2,16 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-# Ler documentação oficinal:
-# http://docs.opencv.org/trunk/d1/db7/tutorial_py_histogram_begins.html
+# Caminho da Imagem
+pathImagem = 'D:\\GitHub\\PDI_2sem2017\\PDI_2sem2017\\Imagens\\urso.jpg'
 
-pathImagem = 'D:\\GitHub\\PDI_2sem2017\\Imagens\\urso.jpg'
-
+# Leitura da imagem
 img = cv2.imread(pathImagem)
+
+# Criação de um vetor representando cada canal da imagem RGB
 color = ('b','g','r')
 
+# FOR em cada canal
 for i,col in enumerate(color):
     histr = cv2.calcHist([img],[i],None,[256],[0,256])
     plt.plot(histr,color = col)

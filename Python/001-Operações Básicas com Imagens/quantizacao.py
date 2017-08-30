@@ -2,13 +2,10 @@ import cv2
 
 pathImagem = 'D:\\GitHub\\PDI_2sem2017\\Imagens\\urso.jpg'
 
-
-
 img = cv2.imread(pathImagem)
 #height, width, channels = img.shape
 #print(height, width, channels, img.size)
 #print(img.shape, img.size)
-
 
 
 # CV_8U, CV_16U, CV_32F, COLOR_RGB2GRAY
