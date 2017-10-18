@@ -1,6 +1,6 @@
 import cv2
 
-pathImagem = 'D:\\GitHub\\PDI_2sem2017\\Imagens\\urso.jpg'
+pathImagem = '../../Imagens/urso.jpg'
 
 img = cv2.imread(pathImagem)
 
